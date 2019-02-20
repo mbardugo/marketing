@@ -1,0 +1,70 @@
+<!doctype HTML>
+
+<html lang="he">
+
+<head>
+    <title>BORDER, FLOAT, DISPLAY</title>
+    <meta name="charset" content="utf-8">
+    <meta name="description" content="הסבר בסיסי על התאמה רספונסיבית">
+    <meta name="viewport" content="width= device-width, inital-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body dir="rtl">
+    <header>
+        <h1>Border, Float, Display</h1>
+    </header>
+    <article>
+        <section>
+            <h2>Border</h2>
+            <ul>
+                <li>הגבול מקבל 3 הגדרות: עובי, סגנון וצבע.
+                    <ul>
+                        <li style="border-style:dashed;">גבול בסגנון Dashed</li>
+                        <li style="border-style:solid; border-color: green">גבול בסגנון solid ובצבע ירוק</li>
+                        <li style="border: 4px double yellow;">אפשר להגדיר את שלושת התכונות יחד. במקרה זה, חשוב מאד להקפיד על סדר הרישום.</li>
+                        <li><a href="https://www.w3schools.com/css/css_border.asp" target="_blank">קראו עוד על סגנונות של גבול</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Float</h2>
+            <ul>
+                <li>מאפשר לאלמנטים להיות אחד לצד השני במקום שכל אלמנט יתפוס רוחב שלם של מסך.</li>
+                <li>יכול להיות לצד ימין או לצד שמאל</li>
+                <li>כאשר עובדים עם תפריטים מקובל מאד לעבוד עם float.</li>
+                <li>כשיש אלמט עם float, האלמנט שאחריו צריך לקבל clear:both. תוכלו לראות זאת בתחילת הפסקה הבאה.</li>
+                <li><a href="https://www.w3schools.com/css/css_float.asp" target="_blank">קראו עוד על float.</a></li>
+            </ul>
+            <ul>
+                <li class="float-me">אלמנט רשימה ראשון</li>
+                <li class="float-me">אלמנט רשימה שני</li>
+                <li class="float-me">אלמנט רשימה שלישי</li>
+            </ul>
+        </section>
+        <section style="clear:both;">
+            <h2>Display</h2>
+            <ul>
+                <li>לכל אחד מהאלמנטים של HTML יש ערך ברירת מחדל לתכונה זו.</li>
+                <li><span>div, p, article, section</span> יהיו ב display block. המשמעות היא שהם תופסים רוחב מסך מלא וניתן לתת להם הגדרות של גובה ורוחב.</li>
+                <li><span>span, a, img</span> יהיו ב display inline. המשמעות היא שהם תופסים רק את המקום של התוכן שלהם ויכולים להיות ליד אלמנטים שיש להם את אותה הגדרת התצוגה. לאלמנטים אלו לא ניתן לתת גובה ורוחב אלא אם משנים להם את הגדרת התצוגה.</li>
+                <li>display: inline-block - תצוגה שהיא שילוב של שני הנ"ל. אלמנטים עם תצוגה זו לא תופסים את כל רוחב המסך וניתן לתת להם הגדרות של גובה ורוחב.</li>
+                <li><a href="https://www.w3schools.com/cssref/pr_class_display.asp" target="_blank">קראו עוד על display.</a></li>
+            </ul>
+        </section>
+    </article>
+<article>
+    <h3>דוגמה לשני section בתצוגת ברירת המחדל</h3>
+    <section class="bg-green">section 1 - default display</section>
+    <section n class="bg-blue">section 2 - default display</section>
+      <h3>דוגמה לשני section בתצוגת inline</h3>
+    <section class="bg-green display-inline">section 1 - default display</section>
+    <section n class="bg-blue display-inline">section 2 - default display</section>
+       <h3>דוגמה לשני section בתצוגת inline-block</h3>
+    <section class="bg-green display-inline-block">section 1 - default display</section>
+    <section n class="bg-blue display-inline-block">section 2 - default display</section>
+    </article>
+</body>
+
+</html>

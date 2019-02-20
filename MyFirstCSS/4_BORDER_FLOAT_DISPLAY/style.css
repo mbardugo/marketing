@@ -1,0 +1,37 @@
+html {
+    font-size: 16px;
+}
+
+h1 {
+    color: cadetblue;
+    font-size: 2.5rem;
+}
+
+h2 {
+    color: darkblue;
+}
+
+li {
+    font-size: 1.5rem;
+}
+
+.float-me {
+    float: right;
+    width: 200px;
+}
+
+.bg-green {
+    background-color: greenyellow;
+}
+
+.bg-blue {
+    background-color: skyblue;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.display-inline-block {
+    display: inline-block;
+}
